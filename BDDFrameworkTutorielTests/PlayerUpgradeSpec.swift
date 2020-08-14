@@ -26,6 +26,11 @@ class PlayerUpgradeSpec: QuickSpec {
         
         describe(".upgradeLives()") {
             
+            func expectUser(toHaveLives expectedLives: Int, afterUpgradeLives upgradeLives: Int)  {
+                try? upgrader.upgradeLives(by: upgradeLives)
+                expect(player.lives).to(equal(expectedLives))
+            }
+            
             context("When the player has no lives") {
                 
                 context("with an upgrade amount of 0") {
@@ -39,8 +44,7 @@ class PlayerUpgradeSpec: QuickSpec {
                 context("With an upgrade amount that is less than the maximum lives") {
                     it("should increment the player'lives by upgrade amount") {
                         
-                        try? upgrader.upgradeLives(by: 1)
-                        expect(player.lives).to(equal(1))
+                       expectUser(toHaveLives: 1, afterUpgradeLives: 1)
                         
                     }
                 }
@@ -53,8 +57,8 @@ class PlayerUpgradeSpec: QuickSpec {
                 }
                 
                 it("should not change the value of the player's lives") {
-                    try? upgrader.upgradeLives(by: 1)
-                    expect(player.lives).to(equal(Player.maximumLives))
+                  
+                    expectUser(toHaveLives: Player.maximumLives, afterUpgradeLives: 1)
                 }
             }
         }
