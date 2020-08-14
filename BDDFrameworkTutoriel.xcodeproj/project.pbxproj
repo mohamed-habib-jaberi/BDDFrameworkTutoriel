@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,6 +17,7 @@
 		6147012024E6B46100C58F7A /* BDDFrameworkTutorielUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6147011F24E6B46100C58F7A /* BDDFrameworkTutorielUITests.swift */; };
 		6147012E24E6B4A100C58F7A /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6147012D24E6B4A100C58F7A /* Player.swift */; };
 		6147013024E6B4C600C58F7A /* PlayerUpgrader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6147012F24E6B4C600C58F7A /* PlayerUpgrader.swift */; };
+		6147013424E6C4A800C58F7A /* PlayerUpgradeSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6147013324E6C4A800C58F7A /* PlayerUpgradeSpec.swift */; };
 		8A36D7FABAD7F324A364F86A /* Pods_BDDFrameworkTutoriel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 001EFA86CF1FF1EBD82204E8 /* Pods_BDDFrameworkTutoriel.framework */; };
 		96FD571FBA25C9C30B4AB020 /* Pods_BDDFrameworkTutorielTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC8D87C516861AEA5F409FAD /* Pods_BDDFrameworkTutorielTests.framework */; };
 		F8D2BB3E08423156C8D91789 /* Pods_BDDFrameworkTutoriel_BDDFrameworkTutorielUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5DBE4DDBB454BDA9CE341FF /* Pods_BDDFrameworkTutoriel_BDDFrameworkTutorielUITests.framework */; };
@@ -58,6 +59,7 @@
 		6147012124E6B46100C58F7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6147012D24E6B4A100C58F7A /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		6147012F24E6B4C600C58F7A /* PlayerUpgrader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerUpgrader.swift; sourceTree = "<group>"; };
+		6147013324E6C4A800C58F7A /* PlayerUpgradeSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerUpgradeSpec.swift; sourceTree = "<group>"; };
 		6505688DB62681CF99C2D282 /* Pods-BDDFrameworkTutorielTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BDDFrameworkTutorielTests.release.xcconfig"; path = "Target Support Files/Pods-BDDFrameworkTutorielTests/Pods-BDDFrameworkTutorielTests.release.xcconfig"; sourceTree = "<group>"; };
 		9DAE9B851A18FA6279F6EA23 /* Pods-BDDFrameworkTutoriel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BDDFrameworkTutoriel.debug.xcconfig"; path = "Target Support Files/Pods-BDDFrameworkTutoriel/Pods-BDDFrameworkTutoriel.debug.xcconfig"; sourceTree = "<group>"; };
 		A91F5A7D2EC18E7D43E9E998 /* Pods-BDDFrameworkTutoriel-BDDFrameworkTutorielUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BDDFrameworkTutoriel-BDDFrameworkTutorielUITests.release.xcconfig"; path = "Target Support Files/Pods-BDDFrameworkTutoriel-BDDFrameworkTutorielUITests/Pods-BDDFrameworkTutoriel-BDDFrameworkTutorielUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				6147011424E6B46100C58F7A /* BDDFrameworkTutorielTests.swift */,
+				6147013324E6C4A800C58F7A /* PlayerUpgradeSpec.swift */,
 				6147011624E6B46100C58F7A /* Info.plist */,
 			);
 			path = BDDFrameworkTutorielTests;
@@ -171,7 +174,6 @@
 				F707E9439F6976C8AEA637AE /* Pods-BDDFrameworkTutorielTests.debug.xcconfig */,
 				6505688DB62681CF99C2D282 /* Pods-BDDFrameworkTutorielTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -408,6 +410,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6147013424E6C4A800C58F7A /* PlayerUpgradeSpec.swift in Sources */,
 				6147011524E6B46100C58F7A /* BDDFrameworkTutorielTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
