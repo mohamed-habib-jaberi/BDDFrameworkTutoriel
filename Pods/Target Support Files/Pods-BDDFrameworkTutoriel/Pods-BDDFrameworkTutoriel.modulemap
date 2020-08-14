@@ -1,0 +1,6 @@
+framework module Pods_BDDFrameworkTutoriel {
+  umbrella header "Pods-BDDFrameworkTutoriel-umbrella.h"
+
+  export *
+  module * { export * }
+}
